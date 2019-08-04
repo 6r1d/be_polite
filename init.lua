@@ -1,5 +1,7 @@
 be_polite = {}
 
+local has_xp_redo_mod = minetest.get_modpath("xp_redo")
+
 local modname = minetest.get_current_modname()
 local modpath = minetest.get_modpath(modname)
 
@@ -49,6 +51,15 @@ local filter_message = function(message)
 end
 
 minetest.register_on_chat_message(function(name, message)
+    -- only filter chat messages from players with certain xp-points (if the xp-redo mod is installed)
+    if has_xp_redo_mod then
+        local xp = xp_redo.get_xp(name)
+        -- TODO: maybe put this in a setting
+        if xp > 10000 then
+            -- experienced player (should be anyways): don't filter message
+            return false
+        end
+    end
     local filter_status = filter_message(message)
     local blocked_msg = ""
     if filter_status.match == true then
