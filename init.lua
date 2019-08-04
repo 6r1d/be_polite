@@ -6,27 +6,23 @@ local modpath = minetest.get_modpath(modname)
 -- Filtered messages and answers
 be_polite.masks = {
     {
-        pattern="help",
+        pattern="^help$",
         msg="Please explain what you need and, if possible, who are you asking for help."
     },
     {
-        pattern="HELP",
+        pattern="^help me$",
         msg="Please explain what you need and, if possible, who are you asking for help."
     },
     {
-        pattern="help me",
-        msg="Please explain what you need and, if possible, who are you asking for help."
-    },
-    {
-        pattern="where are you",
+        pattern="^where are you$",
         msg="Please mention who you are asking, or send a personal message."
     },
     {
-        pattern="come",
+        pattern="^come$",
         msg="Please mention who you are asking, or send a personal message."
     },
     {
-        pattern="come here",
+        pattern="^come here$",
         msg="Please mention who you are asking, or send a personal message."
     },
 }
