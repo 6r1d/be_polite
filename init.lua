@@ -21,7 +21,7 @@ be_polite.filter_message = function(message)
     is_exception = true
   end
   -- Ignore the answer with a player name, which is online
-  local player = minetest.get_player_by_name("singleplayer")
+  local player = minetest.get_player_by_name(message)
   if player then
     is_exception = true
   end
