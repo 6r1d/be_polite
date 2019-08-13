@@ -38,7 +38,7 @@ be_polite.exceptions = {
 local blocked_words = {
   'ass', 'asshole', 'bastard', 'bitch', 'bitching', 'cunt', 'dick', 'jerk', 'kike',
   'nigga', 'nigger', 'pussy', 'shit', 'shitting', 'fag', 'faggot',
-  'fuck', 'fucking'
+  'fuck', 'fucking', 'fucker'
 }
 
 -- Placeholder characters
