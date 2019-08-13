@@ -36,8 +36,8 @@ be_polite.exceptions = {
 
 -- Curse words
 local blocked_words = {
-  'ass', 'asshole', 'bastard', 'bitch', 'bitching', 'cunt', 'jerk', 'kike',
-  'moron', 'nigga', 'nigger', 'pussy', 'shit', 'shitting', 'fag', 'faggot',
+  'ass', 'asshole', 'bastard', 'bitch', 'bitching', 'cunt', 'dick', 'jerk', 'kike',
+  'nigga', 'nigger', 'pussy', 'shit', 'shitting', 'fag', 'faggot',
   'fuck', 'fucking'
 }
 
